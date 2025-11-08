@@ -19,10 +19,19 @@ int arreglosRecurivo(int vec[], int n){
    }
    return sum;
 }
+//iterativo
+void mostrarNumerodeAreglo(int vec[], int n){
+    for(int i=0;i<n;i++){
+        cout << vec[i] << endl;
+    }
+}
+//recursiva
+
 int main()
 {
     int vec[5]={1,2,3,4,5};
-   cout<< arreglosRecurivo(vec,4) <<endl;
+    mostrarNumerodeAreglo(vec,5);
+  // cout<< arreglosRecurivo(vec,4) <<endl;
     //sumaArregloIterativo(5,vec);
     return 0;
 }
